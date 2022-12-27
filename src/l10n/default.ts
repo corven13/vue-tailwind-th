@@ -69,6 +69,7 @@ export const English: Locale = {
   time24hr: false,
   timeLabel: 'Time',
   okLabel: 'Ok',
+  yearOffset: 543,
 };
 
 export default English;

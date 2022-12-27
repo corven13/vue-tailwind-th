@@ -59,6 +59,7 @@ export type Locale = {
   time24hr: boolean;
   timeLabel: string;
   okLabel: string;
+  yearOffset: number;
 };
 
 export type CustomLocale = {
@@ -74,6 +75,7 @@ export type CustomLocale = {
   time24hr?: Locale['time24hr'];
   timeLabel?: Locale['timeLabel'];
   okLabel?: Locale['okLabel'];
+  yearOffset?: Locale['yearOffset'];
   weekdays: {
     shorthand: [string, string, string, string, string, string, string];
     longhand: [string, string, string, string, string, string, string];

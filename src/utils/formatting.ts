@@ -223,7 +223,7 @@ export const formats: Formats = {
   },
 
   // full year e.g. 2016, padded (0001-9999)
-  Y: (date: Date) => pad(date.getFullYear(), 4),
+  Y: (date: Date, locale: Locale) => parseInt(pad(date.getFullYear(), 4)) + locale.yearOffset,
 
   // day in month, padded (01-30)
   d: (date: Date) => pad(date.getDate()),
@@ -258,5 +258,5 @@ export const formats: Formats = {
   w: (date: Date) => date.getDay(),
 
   // last two digits of year e.g. 16 for 2016
-  y: (date: Date) => String(date.getFullYear()).substring(2),
+  y: (date: Date, locale: Locale) => String(date.getFullYear() + locale.yearOffset).substring(2),
 };

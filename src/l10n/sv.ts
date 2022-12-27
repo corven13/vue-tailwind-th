@@ -51,6 +51,7 @@ export const Swedish: CustomLocale = {
   time24hr: true,
 
   ordinal: () => '.',
+  yearOffset: 543,
 };
 
 export default Swedish;
